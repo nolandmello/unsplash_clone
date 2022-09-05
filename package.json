@@ -9,12 +9,19 @@
     "@testing-library/user-event": "^14.4.2",
     "@types/jest": "^27.5.2",
     "@types/node": "^17.0.45",
-    "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "axios": "^0.27.2",
+    "file-saver": "^2.0.5",
     "react": "^18.2.0",
+    "react-click-away-listener": "^2.2.1",
     "react-dom": "^18.2.0",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-redux": "^8.0.2",
+    "react-responsive-masonry": "^2.1.5",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.54.3",
+    "styled-components": "^5.3.5",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },
@@ -41,5 +48,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.5",
+    "@types/jquery": "^3.5.14",
+    "@types/react": "^18.0.17",
+    "@types/styled-components": "^5.1.25"
   }
 }
