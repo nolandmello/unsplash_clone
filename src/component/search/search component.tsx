@@ -1,11 +1,13 @@
 import { event } from "jquery";
 import  { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import {SStle} from "./SearchStyle";
 
 
 export const Search:any =(props:{style : any, colour: string , className:string })=>
 { 
+  const [params, setParams] = useSearchParams();
+
     let field= useRef<HTMLInputElement>(null);
     const [message, setMessage] = useState('');
     let navigate= useNavigate();
@@ -20,7 +22,10 @@ export const Search:any =(props:{style : any, colour: string , className:string 
         if (event.key === "Enter") 
           if (message.length!= 0)
           {
-           navigate(`/s/photos/${field.current?.value.split(" ").join("-")}`)
+            let p = field.current?.value.split(" ").join("-")
+            p && setParams(p)
+            console.log(params)
+          //  navigate(`/s/photos/${params}`)
          }
       };
     
